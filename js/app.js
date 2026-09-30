@@ -3,21 +3,21 @@ const products = [{
 
   id: 1,
 
-  name: "Cesta Básica Completa Doação Social Itens Alimento + Higiene",
+  name: "Suporte Porta 4 Escova De Dente Organizador C/ Dupla Face",
 
-  category: "Alimentos",
+  category: "casa",
 
-  price: 179.90,
+  price: 19.00,
 
-  originalPrice: 250.00,
+  originalPrice: 34.00,
 
-  discount: 28,
+  discount: 45,
 
-  image: '<i class="fas fa-headphones"></i>',
+  image: '<i class="fas fa-tooth"></i>',
 
-  rating: 4.6,
+  rating: 5.0,
 
-  reviews: 175,
+  reviews: 4,
 
   badge: "Mais vendido",
 
@@ -27,9 +27,9 @@ const products = [{
 
   pros: [
 
-    "Diversos alimentos",
+    "Design moderno e funcional",
 
-    "Marcas de grande renome no mercado",
+    "Fácil de instalar e usar",
 
   ],
 
@@ -37,7 +37,7 @@ const products = [{
 
   ],
 
-  affiliateLink: "https://meli.la/1z1K1mC"
+  affiliateLink: "https://meli.la/1X81msa"
 
 },
 
