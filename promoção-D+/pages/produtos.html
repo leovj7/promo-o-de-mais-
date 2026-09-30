@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Promoção D+ — encontre produtos em promoção, compare preços e veja análises antes de comprar.">
+  <title>Promoção D+ - Encontre os Melhores Produtos em Promoção</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="bg-white border-b border-gray-200 sticky top-0 z-40">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+    <a href="../index.html" class="flex items-center gap-3" aria-label="Promoção D+ - Home">
+      <i class="fas fa-tags text-blue-900 text-2xl"></i>
+      <h1 class="text-xl font-bold text-gray-900">Promoção D+</h1>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a href="../index.html" class="nav-link">Home</a>
+      <a href="produtos.html" class="nav-link active">Produtos</a>
+      <a href="sobre.html" class="nav-link text-gray-700 hover:text-blue-900 transition">Sobre</a>
+      <a href="contato.html" class="nav-link text-gray-700 hover:text-blue-900 transition">Contato</a>
+    </nav>
+    <button id="mobileMenuButton" class="md:hidden text-gray-700" aria-label="Abrir menu">
+      <i class="fas fa-bars text-xl"></i>
+    </button>
+  </div>
+  <div id="mobileMenu" class="mobile-menu border-t border-gray-100 bg-white md:hidden">
+    <nav class="px-4 py-3 grid gap-2 text-sm">
+      <a href="../index.html" class="p-3 rounded-lg bg-gray-50 font-semibold">Home</a>
+      <a href="produtos.html" class="p-3 rounded-lg hover:bg-gray-50">Produtos</a>
+      <a href="sobre.html" class="p-3 rounded-lg hover:bg-gray-50">Sobre</a>
+      <a href="contato.html" class="p-3 rounded-lg hover:bg-gray-50">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero-section">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">Todos os Produtos</h2>
+  <p class="text-black-100 mb-6 max-w-2xl mx-auto">
+    Análise profissional de produtos com melhor custo-benefício. Compare, pesquise e decida com mais informação.
+  </p>
+  <div class="search-wrap flex gap-2 max-w-xl mx-auto">
+    <input id="searchInput" type="search" autocomplete="off"
+      placeholder="Buscar produto ou categoria..." aria-label="Buscar produto ou categoria"
+      class="flex-1 px-4 py-3 rounded-lg text-gray-900 text-sm">
+    <button id="searchButton" class="bg-amber-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-amber-500 transition">
+      <i class="fas fa-search mr-2"></i>Buscar
+    </button>
+  </div>
+  <p id="searchStatus" class="search-status text-blue-100 text-sm mt-3" aria-live="polite"></p>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 mb-8 section-anchor" id="categorias">
+  <div class="category-filter flex items-center gap-3 overflow-x-auto pb-2 scrollbar-none">
+    <button class="filter-btn active whitespace-nowrap px-4 py-3 rounded-xl text-sm font-bold transition-all duration-200 bg-slate-900 text-white shadow-md" data-category="todos">Todos</button>
+    <button class="filter-btn whitespace-nowrap px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 border border-slate-200" data-category="tecnologia">Tecnologia</button>
+    <button class="filter-btn whitespace-nowrap px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 border border-slate-200" data-category="casa">Casa & Cozinha</button>
+    <button class="filter-btn whitespace-nowrap px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 border border-slate-200" data-category="esportes">Esportes</button>
+    <button class="filter-btn whitespace-nowrap px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 border border-slate-200" data-category="beleza">Beleza & Saúde</button>
+    <button class="filter-btn whitespace-nowrap px-4 py-3 rounded-xl text-sm font-medium transition-all duration-200 bg-white text-slate-600 hover:bg-slate-50 hover:text-slate-900 border border-slate-200" data-category="livros">Livros & Mídias</button>
+  </div>
+</section>
+
+<section class="max-w-7xl mx-auto px-4 pb-16 section-anchor" id="products">
+  <div class="flex items-end justify-between gap-4 mb-5">
+    <div>
+      <p class="text-sm font-bold text-blue-900 uppercase tracking-wide">Radar de ofertas</p>
+      <h2 class="text-2xl font-bold text-gray-900">Produtos em destaque</h2>
+    </div>
+    <a href="produtos.html" class="hidden sm:inline-flex text-sm font-semibold text-blue-900 hover:underline">
+      Ver todos <i class="fas fa-arrow-right ml-2"></i>
+    </a>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="productGrid"></div>
+</section>
+
+<section class="bg-gray-900 text-white py-14">
+  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-6">
+    <div>
+      <i class="fas fa-search text-amber-400 text-2xl mb-3"></i>
+      <h3 class="font-bold text-lg mb-2">Encontramos</h3>
+      <p class="text-gray-300 text-sm">Produtos e promoções para você pesquisar em um só lugar.</p>
+    </div>
+    <div>
+      <i class="fas fa-scale-balanced text-amber-400 text-2xl mb-3"></i>
+      <h3 class="font-bold text-lg mb-2">Comparamos</h3>
+      <p class="text-gray-300 text-sm">Informações de preço, avaliações, pontos positivos e negativos.</p>
+    </div>
+    <div>
+      <i class="fas fa-hand-pointer text-amber-400 text-2xl mb-3"></i>
+      <h3 class="font-bold text-lg mb-2">Você decide</h3>
+      <p class="text-gray-300 text-sm">Nosso objetivo é facilitar sua pesquisa, não substituir sua decisão.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-white border-t border-gray-200 py-8">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <p class="text-sm text-gray-500">
+      Affiliate Disclosure: This website contains affiliate links. We may earn a commission when you make a purchase through these links, at no additional cost to you.
+    </p>
+    <p class="text-xs text-gray-400 mt-3">© 2026 ProdPreço. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="modal" id="productModal">
+  <div class="modal-content">
+    <div class="p-6">
+      <div class="flex justify-between items-start mb-4">
+        <h2 class="text-2xl font-bold text-gray-900" id="modalTitle"></h2>
+        <button class="close-modal" data-close-modal aria-label="Fechar">&times;</button>
+      </div>
+      <div id="modalImage" class="w-full h-64 bg-gray-200 rounded-lg mb-6 overflow-hidden flex items-center justify-center"></div>
+      <div class="mb-6">
+        <div class="rating-display">
+          <div id="modalRating"></div>
+          <span id="modalReviews" class="text-sm text-gray-600"></span>
+        </div>
+        <div class="flex items-baseline gap-3 mb-4">
+          <span class="text-3xl font-bold text-blue-900" id="modalPrice"></span>
+          <span class="price-original text-lg" id="modalOriginalPrice"></span>
+          <span class="text-red-600 font-bold text-lg" id="modalDiscount"></span>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <h3 class="font-bold text-gray-900 mb-3 text-green-700 flex items-center gap-2">
+            <i class="fas fa-check-circle"></i> Pontos Positivos
+          </h3>
+          <ul class="pros-cons-list pros-list" id="modalPros"></ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-gray-900 mb-3 text-red-700 flex items-center gap-2">
+            <i class="fas fa-times-circle"></i> Pontos Negativos
+          </h3>
+          <ul class="pros-cons-list cons-list" id="modalCons"></ul>
+        </div>
+      </div>
+      <div class="mb-6 p-4 bg-blue-50 border-l-4 border-blue-900 rounded">
+        <p class="text-sm text-gray-700" id="modalDescription"></p>
+      </div>
+      <button class="affiliate-btn" id="affiliateBtn" onclick="handleAffiliate()">
+        <i class="fas fa-external-link-alt mr-2"></i>Ver Melhor Preço
+      </button>
+      <p class="text-xs text-gray-500 text-center mt-3">Affiliate link disclosure applies.</p>
+    </div>
+  </div>
+</div>
+
+<script src="../js/app.js"></script>
+</body>
+</html>

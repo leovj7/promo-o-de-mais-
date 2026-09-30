@@ -1,0 +1,389 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  background: #f8f9fa;
+
+}
+
+.badge-premium {
+
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+
+}
+
+.badge-choice {
+
+  background: #1e40af;
+
+}
+
+.star {
+
+  color: #fbbf24;
+
+}
+
+.product-card {
+
+  transition: all 0.3s ease;
+
+  cursor: pointer;
+
+}
+
+.product-card:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+
+}
+
+.price-original {
+
+  text-decoration: line-through;
+
+  color: #9ca3af;
+
+}
+
+.modal {
+
+  display: none;
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.6);
+
+  z-index: 50;
+
+  overflow-y: auto;
+
+}
+
+.modal.active {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  padding-top: 20px;
+
+}
+
+.modal-content {
+
+  background: white;
+
+  border-radius: 12px;
+
+  max-width: 600px;
+
+  width: 90%;
+
+  margin: 0 auto;
+
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+}
+
+.close-modal {
+
+  cursor: pointer;
+
+  font-size: 28px;
+
+  color: #6b7280;
+
+  transition: color 0.2s;
+
+}
+
+.close-modal:hover {
+
+  color: #1f2937;
+
+}
+
+.pros-cons-list {
+
+  list-style: none;
+
+}
+
+.pros-cons-list li {
+
+  padding: 8px 0;
+
+  padding-left: 28px;
+
+  position: relative;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+}
+
+.pros-cons-list li:before {
+
+  position: absolute;
+
+  left: 0;
+
+  font-size: 16px;
+
+}
+
+.pros-list li:before {
+
+  content: '✓';
+
+  color: #16a34a;
+
+}
+
+.cons-list li:before {
+
+  content: '✗';
+
+  color: #dc2626;
+
+}
+
+.discount-badge {
+
+  position: absolute;
+
+  top: 12px;
+
+  right: 12px;
+
+  background: #dc2626;
+
+  color: white;
+
+  padding: 6px 12px;
+
+  border-radius: 6px;
+
+  font-weight: bold;
+
+  font-size: 14px;
+
+}
+
+.rating-display {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin: 8px 0;
+
+}
+
+.affiliate-btn {
+
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+
+  color: white;
+
+  padding: 12px 24px;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  border: none;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+
+  width: 100%;
+
+  font-size: 16px;
+
+}
+
+.affiliate-btn:hover {
+
+  transform: scale(1.02);
+
+  box-shadow: 0 8px 16px rgba(30, 64, 175, 0.3);
+
+}
+
+.category-filter {
+
+  display: flex;
+
+  gap: 10px;
+
+  overflow-x: auto;
+
+  padding: 16px 0;
+
+  scroll-behavior: smooth;
+
+}
+
+.filter-btn {
+
+  padding: 10px 20px;
+
+  border: 2px solid #e5e7eb;
+
+  background: white;
+
+  border-radius: 24px;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+}
+
+.filter-btn:hover {
+
+  border-color: #1e40af;
+
+  color: #1e40af;
+
+}
+
+.filter-btn.active {
+
+  background: #1e40af;
+
+  color: white;
+
+  border-color: #1e40af;
+
+}
+
+.hero-section {
+
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+
+  color: white;
+
+  padding: 48px 20px;
+
+  text-align: center;
+
+  margin-bottom: 32px;
+
+}
+
+@media (max-width: 768px) {
+
+  .hero-section {
+
+    padding: 32px 20px;
+
+  }
+
+  .modal-content {
+
+    width: 95%;
+
+  }
+
+}
+
+/* ===== ProdPreço - custom responsive layer ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.nav-link.active {
+  color: #1e40af;
+  font-weight: 700;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu.active {
+  display: block;
+}
+
+.search-status {
+  min-height: 22px;
+}
+
+.no-results {
+  grid-column: 1 / -1;
+}
+
+.contact-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.section-anchor {
+  scroll-margin-top: 90px;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 34px 16px;
+  }
+
+  .hero-section h2 {
+    font-size: 2rem;
+    line-height: 1.15;
+  }
+
+  .hero-section .search-wrap {
+    flex-direction: column;
+  }
+
+  .hero-section .search-wrap button {
+    width: 100%;
+  }
+
+  .category-filter {
+    padding-bottom: 8px;
+  }
+
+  .modal-content {
+    width: calc(100% - 24px);
+  }
+}
