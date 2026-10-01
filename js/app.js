@@ -45,42 +45,43 @@ const products = [{
 
   id: 2,
 
-  name: "TESTO ESSENCIAL - Fórmula Exclusiva com Feno Grego + Boro + Arginina + ZMA + Vitamina B6 - 60 cápsulas - Precursor da Testosterona",
+  name: "Parafusadeira Furadeira Bivolt À Bateria 21v + Kit 134 Peças",
 
-  category: "saúde",
+  category: "casa",
 
-  price: 56.77,
+  price: 299.90,
 
-  originalPrice: 91.77,
+  originalPrice: 459.90,
 
-  discount: 38,
+  discount: 34,
 
-  image: '<i class="fas fa-camera"></i>',
+  image: '<i class="fas fa-battery-full"></i>',
 
-  rating: 4.7,
+  rating: 4.8,
 
-  reviews: 19268,
+  reviews: 42,
 
   badge: "Melhor Custo-Benefício",
 
   badgeClass: "",
 
-  description: "Suplemento para aumento da testosterona com ingredientes naturais. Ideal para homens que buscam melhorar seu desempenho físico e mental.",
+  description: "parafusadeira e furadeira á bateria 21v, bivolt, acompanhando um kit com 134 peças, ideal para uso domestico e profissional.",
 
   pros: [
 
-    "Efeito aumentador de testosterona",
+    "potente e eficiente ",
 
-    "Ingredientes naturais",
+    "Fácil de usar",
 
-    "Fórmula exclusiva",
+    "Versátil e portátil",
 
   ],
 
   cons: [
+    " "
   ],
 
-  affiliateLink: "https://meli.la/2s3abzn"
+  affiliateLink: "https://meli.la/2iQNstp"
 
 },
 
@@ -88,15 +89,15 @@ const products = [{
 
   id: 3,
 
-  name: "Magnésio Quelato Trio Vhita 3 Em 1 - 60 Caps",
+  name: "Kit 10 Potes Herméticos Vidro Tampa Bambu Seiri Para Mantimentos Cozinha",
 
-  category: "Saúde",
+  category: "Casa",
 
-  price: 72.92,
+  price: 123.50,
 
-  originalPrice: 88.00,
+  originalPrice: 208.41,
 
-  discount: 17,
+  discount: 40,
 
   image: '<i class="fas fa-keyboard"></i>',
 
@@ -108,25 +109,25 @@ const products = [{
 
   badgeClass: "badge-premium",
 
-  description: "Suplemento de magnésio em forma quelato, ideal para quem busca melhorar a saúde óssea e muscular.",
+  description: "Kit com 10 potes herméticos de vidro com tampa de bambu, ideal para armazenar alimentos na cozinha.",
 
   pros: [
 
-    "Absorção melhorada",
+    "Design elegante e moderno",
 
-    "Sem efeitos colaterais comuns",
+    "Material de alta qualidade",
 
-    "Fórmula clássica e eficaz",
+    "Mantém os alimentos frescos por mais tempo",
 
   ],
 
   cons: [
 
-    "Barulho dos switches (para alguns)",
+    "",
 
-    "Requer software para customização",
+    "",
 
-    "Pesado para transportar"
+    " "
 
   ],
 
@@ -138,41 +139,42 @@ const products = [{
 
   id: 4,
 
-  name: "Panela Elétrica Mecânica Pressão 4l Preta E Inox Midea",
+  name: "Cuba Para Pia Apoio Sobrepor Redonda 28cm Moderna Banheiro",
 
   category: "Casa",
 
-  price: 274.15,
+  price: 37.90,
 
-  originalPrice: 369.00,
+  originalPrice: 99.99,
 
-  discount: 33,
+  discount: 62,
 
-  image: '<i clfas fa-pot-food"></i>',
+  image: '<i class="fas fa-bath"></i>',
 
-  rating: 4.9,
+  rating: 4.5,
 
-  reviews: 2814,
+  reviews: 235,
 
   badge: "Melhor Custo-Benefício",
 
-  badgeClass: "bg-green-600",
+  badgeClass: "bg-blue-900",
 
-  description: "Panela elétrica inteligente com 15 programas de cozimento automático e controle via app. Cozinha perfeito arroz, feijão e muito mais.",
+  description: "Cuba para pia com apoio sobrepor redonda de 28cm, moderna para banheiro.",
 
   pros: [
 
-    "Fácil limpeza",
+    "Fácil de instalar",
 
-    "Economia de energia"
+    "Design moderno e elegante"
 
   ],
 
   cons: [
+    "Material fragil, requer cuidado ao manusear"
 
   ],
 
-  affiliateLink: "https://meli.la/1TkXL5P"
+  affiliateLink: "https://meli.la/2KocCWi"
 
 },
 
@@ -180,44 +182,45 @@ const products = [{
 
   id: 5,
 
-  name: "Óleo De Coco Extra Virgem Coco Show 500ml Vidro - Copra",
+  name: "Cortina Box Banheiro Transparente 100% Pvc 1,40 X 1,80 Mts",
 
-  category: "alimentos",
+  category: "casa",
 
-  price: 35.99,
+  price: 26.90,
 
-  originalPrice: 59.00,
+  originalPrice: 26.90,
 
-  discount: 39,
+  discount: 0.0,
 
-  image: '<i class="fas fa-blender"></i>',
+  image: '<i class="fas fa-shower"></i>',
 
-  rating: 4.8,
+  rating: 4.7,
 
-  reviews: 426,
+  reviews: 63,
 
   badge: "Escolha do Especialista",
 
-  badgeClass: "bg-amber-600",
+  badgeClass: "bg-blue-900",
 
-  description: "Óleo de coco extra virgem em vidro, 500ml. Ideal para uso culinário e natural.",
+  description: "Cortina box para banheiro transparente 100% pvc 1,40 x 1,80 mts",
 
   pros: [
 
-    "Não contem glútem",
+    "Fácil de instalar e limpar",
 
-    "Rico em TCM",
+    "Durável e resistente",
 
-    "Vegano",
+    "Design elegante",
 
   ],
 
   cons: [
+    
 
 
   ],
 
-  affiliateLink: "https://meli.la/1L7vM63"
+  affiliateLink: "https://meli.la/1YkKGZM"
 
 },
 
@@ -225,30 +228,31 @@ const products = [{
 
   id: 6,
 
-  name: "Robô aspirador Robot W90 varre aspira e passa pano 30w Wap cor preto",
+  name: "Varão Extensível Extensor Cortina Box Banheiro 110cm A 200cm Branco",
 
-  category: "Tecnologia",
+  category: "Casa",
 
-  price: 359.90,
+  price: 24.90,
 
-  originalPrice: 514.14,
+  originalPrice: 39.90,
 
-  discount: 60,
+  discount: 37,
 
-  image: '<i class="fas fa-watch"></i>',
+  image: '<i class="fas fa-bars"></i>',
 
-  rating: 4.6,
+  rating: 4.7,
 
-  reviews: 16225,
+  reviews: 88,
 
   badge: "Mais vendido",
 
-  badgeClass: "bg-green-600",
+  badgeClass: "bg-blue-900",
 
-  description: "Robô aspirador com varredura, aspiração e passagem de pano. Ideal para manter sua casa limpa com facilidade.",
+  description: "Varão extensível para cortina box de banheiro, 110cm a 200cm, cor branco. Ideal para uso residencial.",
 
   pros: [
 
+   "Material resistente e durável"
 
   ],
 
@@ -257,7 +261,7 @@ const products = [{
 
   ],
 
-  affiliateLink: "https://meli.la/1G87sAf"
+  affiliateLink: "https://meli.la/27HoLcn"
 
 },
 
