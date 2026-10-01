@@ -228,11 +228,11 @@ const products = [{
 
   id: 6,
 
-  name: "Varão Extensível Extensor Cortina Box Banheiro 110cm A 200cm Branco",
+  name: "Varao Extensível Ajustável 45cm À 150cm Cortina Box Pressão",
 
   category: "Casa",
 
-  price: 24.90,
+  price: 20.75,
 
   originalPrice: 39.90,
 
@@ -269,51 +269,43 @@ const products = [{
 
   id: 7,
 
-  name: "Cooktop Itatiaia Essencial 5 Bocas Preto",
+  name: "Varao Extensível Ajustável 45cm À 150cm Cortina Box Pressão Branco",
 
-  category: "Tecnologia",
+  category: "Casa",
 
-  price: 376.60,
+  price: 20.75,
 
-  originalPrice: 590.70,
+  originalPrice: 22.99,
 
-  discount: 19,
+  discount: 9,
 
-  image: '<i class="fas fa-book"></i>',
+  image: '<i class="fas fa-bars"></i>',
 
-  rating: 4.9,
+  rating: 4.4,
 
-  reviews: 22914,
+  reviews: 489,
 
-  badge: "Mais vendido ",
+  badge: "Escolha do Especialista",
 
-  badgeClass: "bg-amber-600",
+  badgeClass: "bg-blue-900",
 
-  description: "Cooktop Itatiaia Essencial 5 Bocas Preto. Ideal para cozinha moderna.",
+  description: "Varão extensível para cortina box de banheiro, 45cm a 150cm, cor branco. Ideal para uso residencial.",
 
   pros: [
 
-    "Design moderno e elegante",
+    "Ajustável e versátil",
 
-    "Fácil de limpar",
+    "Fácil de instalar",
 
-    "Bocas com diferentes potências",
-
-    "Segurança com atendimento ás normas",
-
-    "Durabilidade e resistência"
+    "Design discreto e elegante",
 
   ],
 
   cons: [
 
-    "Pode ser difícil de instalar",
-
-    "não é portátil"
-
   ],
 
-  affiliateLink: "https://meli.la/2ookuio"
+  affiliateLink: "https://meli.la/2JqAf5L"
 
 },
 
@@ -528,7 +520,7 @@ function clearSearch() {
   renderProducts();
 }
 
-function searchByCategory(category) {
+function filterByCategory(category) {
   currentFilter = category;
   currentSearch = "";
   const input = document.getElementById("searchInput");
